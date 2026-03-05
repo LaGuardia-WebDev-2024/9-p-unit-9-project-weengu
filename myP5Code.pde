@@ -13,14 +13,30 @@ draw = function(){
   fill(255, 255, 255);
   
   if (answer == 1) {
-    text("YOUR", 176, 200);
-    text("MESSAGE", 159, 229); 
+    text("see", 176, 200);
+    text("your fortune", 159, 229); 
   }
-  
+  if (mouseClicked && mouseX > 20 && mouseX < 186 && mouseY > 100 && mouseY < 200) {
+     fill(255, 0, 0);
+      triangle(200, 104, 280, 280, 120, 280);
+  text("EVIL MAGIC BALL", 159, 229);
+  fill(255,255,255);
+  text(" SAYS DO EVERYTHING", 129, 249);
+  fill(255,255,255);
+
+  }
+    if (mouseClicked && mouseX > 60 && mouseX < 300 && mouseY > 20 && mouseY < 100) {
+      triangle(200, 104, 280, 280, 120, 280);
+  fill(0, 255, 0);
+  text("yeesssssssss", 159, 229);
+   fill(255,255,255);
+
+  }
 };
 
 mouseClicked = function(){
   answer = round(random(1, 5));
+
 };
 
 
